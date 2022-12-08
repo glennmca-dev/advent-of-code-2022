@@ -12,7 +12,7 @@ def part_one():
     bags = {}
     duplicate_values = 0
 
-    with open("./input.txt", 'r') as f:
+    with open("./3.txt", 'r') as f:
         lines = f.readlines()
         for i in lines:
             i = i.strip('\n')
@@ -36,7 +36,7 @@ def part_two():
     bag_groups = []
     group_values = 0
 
-    with open("./input.txt", 'r') as f:
+    with open("./3.txt", 'r') as f:
         lines = f.readlines()
         for i in range(0,len(lines),3):
             bags = [lines[i].strip('\n'), lines[i+1].strip('\n'), lines[i+2].strip('\n')]

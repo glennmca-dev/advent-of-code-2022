@@ -35,7 +35,7 @@ def part_one():
             stacks[f"stack{stack_to}"].append(stacks[f"stack{stack_from}"].pop())
 
 
-    with open ('./input.txt') as f:
+    with open ('./5.txt') as f:
         lines = f.readlines()
         input_stacks = lines[:8]
         instructions = lines[10:]
@@ -73,7 +73,7 @@ def part_two():
     for i in range(1,10):
         stacks.update({f"stack{i}": []})
 
-    with open ('./input.txt') as f:
+    with open ('./5.txt') as f:
         lines = f.readlines()
         input_stacks = lines[:8]
         instructions = lines[10:]

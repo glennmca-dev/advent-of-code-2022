@@ -15,14 +15,14 @@ def diff_finder(input, unique):
                         return i
 
 def part_one():
-    with open('./input.txt') as f:
+    with open('./6.txt') as f:
         lines = f.readlines()
         for i in lines:
             answer = diff_finder(i, 4)
             print("answer = " + str(answer))
 
 def part_two():
-    with open('./input.txt') as f:
+    with open('./6.txt') as f:
         lines = f.readlines()
         for i in lines:
             answer = diff_finder(i, 14)

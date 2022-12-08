@@ -2,7 +2,7 @@ elf_total = []
 highest_score = 0
 
 
-with open("./input.txt", 'r') as f:
+with open("./1.txt", 'r') as f:
     elf_calories = 0
     lines = f.readlines()
     for i in lines:

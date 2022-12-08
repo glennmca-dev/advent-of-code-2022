@@ -22,7 +22,7 @@ def range_overlaps(range1, range2):
 
 
 def part_one():
-    with open('input.txt') as f:
+    with open('4.txt') as f:
         lines = f.readlines()
         counter = 0
         for line in lines:
@@ -35,7 +35,7 @@ def part_one():
 
 
 def part_two():
-    with open('input.txt') as f:
+    with open('4.txt') as f:
         lines = f.readlines()
         counter = 0
         for line in lines:
