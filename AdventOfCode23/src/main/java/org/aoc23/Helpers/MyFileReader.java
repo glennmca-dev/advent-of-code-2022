@@ -1,16 +1,13 @@
 package org.aoc23.Helpers;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MyFileReader {
-    private String filePath;
-    private List<String> fileLines = new ArrayList<String>();
-    public MyFileReader(String path){
+public class MyFileReader{
+    private final String filePath;
+    private List<String> fileLines = new ArrayList<>();
+    public MyFileReader(String path) throws FileNotFoundException {
         this.filePath = path;
     }
 
@@ -22,6 +19,8 @@ public class MyFileReader {
                 fileLines.add(line);
             }
             return fileLines;
+        } catch (FileNotFoundException e) {
+            throw new FileNotFoundException(e.toString());
         }
     }
 

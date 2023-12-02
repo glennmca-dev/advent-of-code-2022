@@ -1,4 +1,4 @@
-package org.aoc23.Day1;
+package org.aoc23.MySolutions;
 
 import org.aoc23.Helpers.MyFileReader;
 
@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Day1 {
-    private final String path = "src/main/resources/InputFiles/day1.txt";
+    private final String path = "/Users/glenn/repos/advent of code/AdventOfCode23/src/main/java/org/aoc23/Helpers/InputFiles/day1.txt";
     private final MyFileReader fReader = new MyFileReader(path);
     private final List<String> fileLines = fReader.readFile();
 
@@ -55,8 +55,6 @@ public class Day1 {
                 String line = fileLines.get(i).replace(nums[j], replacements[j]);
                 fileLines.set(i, line);
                 }
-                String compare= fileLines.get(i);
-                System.out.println(compare);
             }
         }
 
